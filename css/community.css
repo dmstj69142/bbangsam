@@ -1,0 +1,187 @@
+.banner {
+    width: 100%;
+    height: 60vh;
+    background: url(../img/bg_main_community.png) no-repeat center / cover;
+    position: relative;
+}
+.brand_title_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+.nav_box {
+    display: flex;
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.brand_txt {
+    font-size: 60px;
+}
+.main_box {
+    max-width: 1400px;
+    width: 80%;
+    margin: 100px auto;
+}
+h2 {
+    font-size: 5em;
+}
+
+.search_box {
+    float: right;
+    overflow: hidden;
+}
+#array {
+    border: none;
+    border-bottom: 2px solid;
+    padding: 10px;
+    outline: none;
+    float: left;
+}
+.search {
+    width: 200px;
+    position: relative;
+    float: left;
+    border-bottom: 2px solid;
+    margin-left: 20px;
+}
+.search input {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+.search img {
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.cm_content {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    border-collapse: collapse;
+    font-size: 2em;
+}
+
+.cm_content th, td {
+    padding: 10px;
+}
+.table_title {
+    background-color: #c4aa7787;
+}
+.pointer {
+    cursor: pointer;
+}
+.num_box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+/* community_detail.html */
+.community_content_box {
+    text-align: center;
+    padding-top: 10px;
+}
+.community_title_box {
+    width: 100%;
+    background-color: #c4aa7787;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+.community_title_box > .title {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+.community_title_box > .date {
+    font-size: 2.5em;
+}
+.community_content_box > img {
+    width: 70%;
+}
+.community_content_box > .line {
+    width: 100%;
+    height: 2px;
+    background-color: lightgray;
+    margin: 30px 0;
+}
+.community_content_box .list_btn {
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #c4aa7787;
+    font-size: 3em;
+    display: inline-block;
+}
+.list_btn > a {
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+    .banner {
+        height: 40vh;
+    }
+    .brand_txt {
+        font-size: 14em;
+    }
+    .main_box {
+        margin: 30px auto;
+    }
+    .search_box {
+        float: none;
+    }
+    #array, .search input {
+        padding: 5px;
+        font-size: 3em;
+    }
+    #array {
+        border-bottom: 1px solid gray;
+    }
+    .search {
+        padding: 1px;
+        border-bottom: 1px solid gray;
+        margin-left: 10px;
+    }
+    .search img {
+        width: 14px;
+    }
+    .cm_content {
+        margin: 20px auto;
+    }
+    .cm_content tr {
+        margin: 15px auto;
+        font-size: 1.6em;
+    }
+    .cm_content th, td {
+        padding: 5px;
+    }
+    .num_box {
+        font-size: 4em;
+    }
+
+    .community_title_box > .title {
+        font-size: 4em;
+    }
+    .community_content_box > .line {
+        height: 1px;
+    }
+    .list_btn > a {
+        padding: 5px 15px;
+    }
+}
